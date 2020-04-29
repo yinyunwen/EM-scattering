@@ -15,7 +15,7 @@ function [Ea,Ee,J,Ediff,M] = EM1PerfectEllipsoid(a,b,c,m,w,X,vis)
 
 global mu C k PI4 Delta
 
-% INITIALIZING SOME CONSTS:
+% INITIALIZING SOME CONSTS初始化一些常数:
 PI2 = 2*pi;
 PI4 = 4*pi;
 % Speed of EM radio wave in free space in cm
@@ -24,7 +24,7 @@ C = 3*10^10;
 if(nargin<5)
     w = 5*10^14;
 end
-% Wave number k = 2pi/lambda
+% Wave number k = 2pi/lambda波数
 k = PI2*w/C;
 ik = 1i*k;
 % characteristic constant of surface area of a ball: S=4*pi*R^2
